@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Josefin+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Fugaz+One&family=Marcellus&display=swap');
+
+body {
+    background-color: #EDEADE;
+    color: #4F7942;
+}
+h1{
+    color: #283d21;
+}
+.heading {
+    background-image: url("pexels-quark-studio-2506990.jpg");
+    background-size: cover;
+    width: 90%;
+    border-radius: 5px;
+    font-family: 'Bungee', sans-serif;
+    margin: 10px;
+    padding: 5px;
+}
+
+.heading h1 {
+    margin-left: 50px;
+    text-align: left;
+    transition: 0.3s;
+    color: #FAF9F6;
+}
+.heading h1:hover {
+    color: #283d21;
+    text-shadow: 1px 1px 5px #EDEADE;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+.nav {
+    color: #4F7942;
+    width: 90%;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'baloo 2', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    color: #4F7942;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #FAF9F6;
+    border-radius: 5px;
+
+    border: 2px inset #4f794200;
+    transition: 0.5s;
+}
+
+#services {
+    background-color: #cf1212;
+    color: #FAF9F6;
+    padding: 5px 20px;
+}
+
+.nav a:hover {
+    background-color: #4F7942;
+    border-radius: 10px;
+    border: 2px inset #FAF9F6;
+    color: #FAF9F6;
+    transition-timing-function: ease;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+
+}
+
+.marquee {
+    background-color: #FAF9F6;
+    color: #cf1212;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'baloo 2', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/*Header End*/
+.ourservices{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ourservices h1{
+    margin: 10px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    background-color: #FAF9F6;
+    border-radius: 5px;
+}
+
+.container{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    background-color: #FAF9F6;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutservices{
+    font-family: 'Marcellus', serif;
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    height: 90%;
+}
+.fig{
+    background-size:cover;
+    height: 90%;
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#parkingfig{
+    background-image: url("parking.jpg");
+}
+#poolfig{
+    background-image: url("pool.jpg");
+}
+#privatepoolfig{
+    background-image: url("privatepool.jpg");
+}
+#conferencefig{
+    background-image: url("conferenceroom.jpg");
+}
+#gymfig{
+    background-image: url("gym.jpg");
+}
+#spafig{
+    background-image: url("spa.jpg");
+}
+#wifi-fig{
+    background-image: url("wifi.jpg");
+}
+
+/*Footer Start*/
+
+.footer {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAF9F6;
+    padding: 5px;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+
+.footer .section {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    color: #4F7942;
+}
+
+.footer h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #283d21;
+}
+
+.footer p {
+    font-family: 'baloo 2', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 0 5px;
+}
+
+.footer .social-icons a.facebook {
+    background-image: url("facebook_5968764.png");
+}
+
+.footer .social-icons a.twitter {
+    background-image: url("twitter_3670151.png");
+}
+
+.footer .social-icons a.instagram {
+    background-image: url("instagram_3955024.png");
+}
+
+.footer .social-icons a.youtube {
+    background-image: url("youtube_3670147.png");
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    font-family: 'baloo 2', sans-serif;
+}
