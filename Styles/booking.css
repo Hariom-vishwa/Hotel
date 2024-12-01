@@ -1,0 +1,101 @@
+
+#booking {
+    background-color: #cf1212;
+    color: #FAF9F6;
+    padding: 5px 20px;
+}
+
+
+/*Header End*/
+
+.form {
+    background-color: #FAF9F6;
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.booking {
+    background-color: #EDEADE;
+    font-family: 'Marcellus', serif;
+    margin: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+table {
+    font-family: 'baloo 2', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-weight: 800;
+    display: flex ;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+input {
+    width: 248.4px;
+    height: 21.4px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #4F7942;
+    color: #4F7942;
+    border-radius: 10px;
+    text-align: center;
+}
+
+select {
+
+    width: 260px;
+    height: 33px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #4F7942;
+    color: #4F7942;
+    border-radius: 10px;
+    text-align: center;
+}
+
+textarea {
+    width: 248.4px;
+    height: 43px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #4F7942;
+    color: #4F7942;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#submit {
+    width: 248.4px;
+    height: 35px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #283d21;
+    border: 2px inset #4f794200;
+    color: #FAF9F6;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    font-size: medium;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+#submit:hover{
+    background-color: #4F7942;
+    transition-timing-function: ease;
+    border: 2px inset #EDEADE;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+}
+

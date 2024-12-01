@@ -1,0 +1,77 @@
+
+#services {
+    background-color: #cf1212;
+    color: #FAF9F6;
+    padding: 5px 20px;
+}
+
+/*Header End*/
+
+.ourservices{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ourservices h1{
+    margin: 10px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    background-color: #FAF9F6;
+    border-radius: 5px;
+}
+
+.container{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    background-color: #FAF9F6;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutservices{
+    font-family: 'Marcellus', serif;
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    height: 90%;
+}
+.fig{
+    background-size:cover;
+    height: 90%;
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#parkingfig{
+    background-image: url("/Images/parking.jpg");
+}
+#poolfig{
+    background-image: url("/Images/pool.jpg");
+}
+#privatepoolfig{
+    background-image: url("/Images/privatepool.jpg");
+}
+#conferencefig{
+    background-image: url("/Images/conferenceroom.jpg");
+}
+#gymfig{
+    background-image: url("/Images/gym.jpg");
+}
+#spafig{
+    background-image: url("/Images/spa.jpg");
+}
+#wifi-fig{
+    background-image: url("/Images/wifi.jpg");
+}
