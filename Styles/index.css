@@ -65,7 +65,8 @@
     font-family: "baloo 2", sans-serif;
   }
 
-  .identity-button, .availability-container #submit {
+  .identity-button,
+  .availability-container #submit {
     width: 100%;
     text-decoration: none;
     text-align: center;
@@ -74,10 +75,12 @@
     font-size: 5vw;
     font-family: "baloo 2", sans-serif;
     border: 0.2vw solid #283d21;
+    border-radius: 1vw;
     transition: 0.5s;
   }
 
-  .identity-button:hover, .availability-container #submit:hover {
+  .identity-button:hover,
+  .availability-container #submit:hover {
     background-color: #4f7942;
     color: #edeade;
     border-radius: 2vw;
@@ -116,7 +119,7 @@
     border-radius: 1vw;
   }
 
-  #availabilitypara{
+  #availabilitypara {
     padding: 5vw 3vw;
   }
 
@@ -166,33 +169,31 @@
     border-radius: 1vw;
     text-align: center;
   }
-
- 
 }
 @media screen and (min-width: 427px) {
-}
-
-@media screen and (min-width: 1024px) {
   /* Identity  */
 
-  .identity-container {
+  .identity-container,
+  .availability-container {
     background-color: #faf9f6;
     width: 90%;
-    height: 350px;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
+    height: 30vw;
+    border-radius: 0.5vw;
+    margin: 2vw;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
   }
 
   .identity {
     background-color: #edeade;
-    width: 45%;
-    margin: 10px;
-    padding: 0px 100px;
-    border-radius: 5px;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .identity-h3 {
@@ -213,61 +214,48 @@
   }
 
   .identity-fig {
-    width: 45%;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 0.3vw;
     background-image: url("/Images/pexels-pixabay-161758.jpg");
     background-size: cover;
     background-position: center;
   }
 
-  .identity-button {
+  .identity-button,
+  .availability-container #submit {
     text-decoration: none;
     background-color: #283d21;
     color: #edeade;
-    padding: 5px 20px;
+    padding: 0.5vw 1vw;
     font-family: "baloo 2", sans-serif;
-    border: 2px solid #283d21;
-    transition: 0.5s;
+    border: 0.3vw solid #283d21;
   }
 
-  .identity-button:hover {
+  .identity-button:hover,
+  .availability-container #submit:hover {
     background-color: #4f7942;
     color: #edeade;
-    border-radius: 10px;
-    border: 2px inset #edeade;
+    border-radius: 1vw;
+    border: 0.2vw inset #edeade;
     box-shadow: 0px 5px 5px #21321b98 inset;
-    transition-timing-function: ease;
   }
 
   /* Availability */
   .availability-container {
-    width: 90%;
-    height: 350px;
-    background-color: #faf9f6;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
+    /* height: auto; */
   }
 
   #availabilitypara {
-    width: 45%;
-    height: 90%;
     background-color: #edeade;
-    margin: 10px;
-    padding: 0px 100px;
-    border-radius: 5px;
-    /* justify-content: center;
-    align-items: center; */
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
   }
 
   #availabilitypara h1 {
     font-family: "Josefin Sans", sans-serif;
-    margin-top: 50px;
   }
 
   #availabilitypara p {
@@ -277,33 +265,33 @@
   #availabilityform {
     background-image: url("/Images/pexels-scott-webb-305821.jpg");
     background-size: cover;
-    width: 45%;
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #edeade;
-    margin: 10px;
-    border-radius: 5px;
+    border-radius: 0.3vw;
   }
 
   table {
+    width: 100%;
     font-family: "baloo 2", sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    align-content: center;
   }
 
   label {
     font-weight: 800;
     display: flex;
-    margin: 5px;
     justify-content: start;
     align-items: center;
-    padding: 5px;
   }
 
-  input {
-    width: 248.4px;
-    padding: 5px;
+  input,
+  select {
+    width: 15vw;
+    padding: 0.5vw;
     margin: 10px;
     background-color: #edeade;
     border: 1px solid #4f7942;
@@ -311,35 +299,135 @@
     border-radius: 10px;
     text-align: center;
   }
+}
 
-  select {
+@media screen and (min-width: 1024px) {
+  /* Identity  */
+
+  .identity-container,
+  .availability-container {
+    background-color: #faf9f6;
+    width: 90%;
+    height: 30vw;
+    border-radius: 0.5vw;
+    margin: 2vw;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+  }
+
+  .identity {
     background-color: #edeade;
-    width: 260px;
-    height: 28px;
-    padding: 5px;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .identity-h3 {
+    color: #4f7942;
+    font-family: "Marcellus", serif;
+  }
+
+  .identity-h1 {
+    width: 100%;
+    color: #283d21;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .identity-p {
+    width: 100%;
+    color: #4f7942;
+    font-family: "baloo 2", sans-serif;
+  }
+
+  .identity-fig {
+    border-radius: 0.3vw;
+    background-image: url("/Images/pexels-pixabay-161758.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .identity-button,
+  .availability-container #submit {
+    text-decoration: none;
+    background-color: #283d21;
+    color: #edeade;
+    padding: 0.5vw 1vw;
+    font-family: "baloo 2", sans-serif;
+    border: 0.3vw solid #283d21;
+  }
+
+  .identity-button:hover,
+  .availability-container #submit:hover {
+    background-color: #4f7942;
+    color: #edeade;
+    border-radius: 1vw;
+    border: 0.2vw inset #edeade;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+  }
+
+  /* Availability */
+  .availability-container {
+    /* height: auto; */
+  }
+
+  #availabilitypara {
+    background-color: #edeade;
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  #availabilitypara h1 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #availabilitypara p {
+    font-family: "baloo 2", sans-serif;
+  }
+
+  #availabilityform {
+    background-image: url("/Images/pexels-scott-webb-305821.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #edeade;
+    border-radius: 0.3vw;
+  }
+
+  table {
+    width: 100%;
+    font-family: "baloo 2", sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+
+  label {
+    font-weight: 800;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  input,
+  select {
+    width: 15vw;
+    padding: 0.5vw;
+    margin: 10px;
+    background-color: #edeade;
     border: 1px solid #4f7942;
     color: #4f7942;
     border-radius: 10px;
     text-align: center;
-  }
-
-  #submit {
-    background-color: #283d21;
-    color: #edeade;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 5px 20px;
-    font-family: "baloo 2", sans-serif;
-    border: 2px solid #283d21;
-    transition: 0.5s;
-  }
-
-  #submit:hover {
-    background-color: #4f7942;
-    color: #edeade;
-    border-radius: 10px;
-    border: 2px inset #edeade;
-    box-shadow: 0px 5px 5px #21321b98 inset;
-    transition-timing-function: ease;
   }
 }

@@ -39,7 +39,7 @@ h1 {
 
 @media screen and (max-width: 426px) {
   .heading {
-    border-radius: 3vw;
+    border-radius: 1vw;
     margin: 5vw 2vw;
     padding: 10vw 3vw;
   }
@@ -66,14 +66,15 @@ h1 {
   .hamBurger button {
     width: 10vw;
     height: 10vw;
-    background-color: #4f7942;
+    background-color: #fff;
+    stroke: #4f7942;
     display: grid;
     place-items: center;
     position: relative;
     z-index: 55;
     border: none;
     padding: 2vw;
-    border-radius: 2vw;
+    border-radius: 1vw;
   }
 
   .hamBurger .hamMenu {
@@ -126,13 +127,73 @@ h1 {
 }
 
 @media screen and (min-width: 427px) {
+  .heading {
+    border-radius: 1vw;
+    margin: 2vw;
+    padding: 3vw;
+  }
+
+  .hamBurger {
+    display: none;
+  }
+
+  .heading h1 { 
+    color: #faf9f6;
+  }
+
+  .heading h1:hover {
+    text-shadow: 0 0 10px #cf1212;
+    scale: 1.02;
+  }
+
+  .nav {
+    color: #4f7942;
+    width: 90%;
+    border-radius: 1vw;
+    margin: 2vw;
+    font-family: "baloo 2", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav a {
+    color: #4f7942;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    background-color: #faf9f6;
+    border-radius: 0.5vw;
+    border: 0.2vw inset #4f794200;
+  }
+
+  .nav a:hover {
+    background-color: #4f7942;
+    border-radius: 1vw;
+    border: 0.2vw inset #faf9f6;
+    color: #faf9f6;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+  }
+
+  .marquee {
+    background-color: #faf9f6;
+    color: #cf1212;
+    border-radius: 0.5vw;
+    width: 90%;
+    margin: 2vw;
+    padding: 1vw;
+    font-family: "baloo 2", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
   .heading {
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
+    border-radius: 0.5vw;
+    margin: 2vw;
+    padding: 2vw;
   }
 
   .hamBurger {
@@ -140,8 +201,6 @@ h1 {
   }
 
   .heading h1 {
-    margin-left: 50px;
-    text-align: left;
     color: #faf9f6;
   }
 
@@ -154,30 +213,27 @@ h1 {
   .nav {
     color: #4f7942;
     width: 90%;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
+    border-radius: 0.5vw;
+    margin: 2vw;
     font-family: "baloo 2", sans-serif;
     font-weight: bold;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .nav a {
     color: #4f7942;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 0.5vw 1vw;
     background-color: #faf9f6;
-    border-radius: 5px;
-
-    border: 2px inset #4f794200;
-    transition: 0.5s;
+    border-radius: 0.5vw;
+    border: 0.2vw inset #4f794200;
   }
 
   .nav a:hover {
     background-color: #4f7942;
-    border-radius: 10px;
-    border: 2px inset #faf9f6;
+    border-radius: 0.5vw;
+    border: 0.2vw inset #faf9f6;
     color: #faf9f6;
     transition-timing-function: ease;
     box-shadow: 0px 5px 5px #21321b98 inset;
@@ -186,12 +242,13 @@ h1 {
   .marquee {
     background-color: #faf9f6;
     color: #cf1212;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     width: 90%;
-    margin: 10px;
-    padding: 5px;
+    margin: 2vw;
+    padding: 1vw;
     font-family: "baloo 2", sans-serif;
-    font-weight: bold;
+    font-size: 1.5vw;
+    font-weight: 500;
     display: flex;
     align-items: center;
   }
