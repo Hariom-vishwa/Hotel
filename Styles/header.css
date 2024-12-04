@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amita&family=Fugaz+One&family=Marcellus&display=swap");
 
+* {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
 body {
   background-color: #edeade;
   color: #4f7942;
@@ -11,41 +19,96 @@ h1 {
   color: #283d21;
 }
 
+.heading {
+  background-image: url("https://images.pexels.com/photos/3578007/pexels-photo-3578007.jpeg");
+  background-size: cover;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Bungee", sans-serif;
+}
+
+.marquee {
+  width: 90%;
+  font-family: "baloo 2", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 426px) {
   .heading {
-    background-image: url("/Images/pexels-quark-studio-2506990.jpg");
-    background-size: cover;
-    width: 90%;
-    border-radius: 5px;
-    font-family: "Bungee", sans-serif;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .hamBurger {
-    width: 40px;
-    height: 40px;
-    background-color: #4f7942;
-    display: grid;
-    place-items: center;
-    border: none;
-    border-radius: 2vw;
+    border-radius: 3vw;
+    margin: 5vw 2vw;
+    padding: 10vw 3vw;
   }
 
   .heading h1 {
-    margin-left: 50px;
+    font-size: 7vw;
     text-align: left;
-    transition: 0.3s;
     color: #faf9f6;
   }
 
   .heading h1:hover {
-    color: #283d21;
-    text-shadow: 1px 1px 5px #edeade;
+    text-shadow: 1px 1px 5px #283d21;
     scale: 1.02;
-    transition: 0.3s;
+  }
+
+  .hamBurger {
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    gap: 2vw;
+    position: relative;
+  }
+
+  .hamBurger button {
+    width: 10vw;
+    height: 10vw;
+    background-color: #4f7942;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 55;
+    border: none;
+    padding: 2vw;
+    border-radius: 2vw;
+  }
+
+  .hamBurger .hamMenu {
+    width: 80vw;
+    height: 100vh;
+    scale: 0;
+    background-color: #ffffffa0;
+    backdrop-filter: blur(5px);
+    padding: 10vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transform: translateX(120vw);
+    gap: 6vw;
+    right: -100vw;
+    top: -200vw;
+    z-index: 54;
+    position: absolute;
+  }
+
+  .hamBurger .hamMenu a {
+    color: #4f7942;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw;
+    font-weight: 800;
+  }
+
+  .hamBurger .closeHam {
+    right: 125%;
+    transform: scale(0);
+  }
+
+  .hamMenu .activeHam {
+    border-bottom: 2px ridge #cf1212;
   }
 
   .nav {
@@ -55,14 +118,10 @@ h1 {
   .marquee {
     background-color: #faf9f6;
     color: #cf1212;
-    border-radius: 5px;
-    width: 90%;
-    margin: 10px;
-    padding: 5px;
-    font-family: "baloo 2", sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+    border-radius: 1vw;
+    font-size: 5vw;
+    margin: 5vw 2vw;
+    padding:  2vw;
   }
 }
 
@@ -71,15 +130,9 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   .heading {
-    background-image: url("/Images/pexels-quark-studio-2506990.jpg");
-    background-size: cover;
-    width: 90%;
     border-radius: 5px;
-    font-family: "Bungee", sans-serif;
     margin: 10px;
     padding: 5px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .hamBurger {
@@ -89,7 +142,6 @@ h1 {
   .heading h1 {
     margin-left: 50px;
     text-align: left;
-    transition: 0.3s;
     color: #faf9f6;
   }
 
@@ -97,7 +149,6 @@ h1 {
     color: #283d21;
     text-shadow: 1px 1px 5px #edeade;
     scale: 1.02;
-    transition: 0.3s;
   }
 
   .nav {
