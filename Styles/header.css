@@ -7,7 +7,11 @@
   transition: all 0.5s ease;
   margin: 0;
   padding: 0;
-  /* border: 1px solid; */
+  scroll-behavior: smooth;
+  &::selection{
+    color: #edeade;
+    background-color: #cf1212;
+  }
 }
 
 body {

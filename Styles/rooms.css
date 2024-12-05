@@ -1,87 +1,214 @@
-
 #Rooms {
-    background-color: #cf1212;
-    color: #FAF9F6;
-    padding: 5px 20px;
+  background-color: #cf1212;
+  color: #faf9f6;
+  padding: 5px 20px;
+}
+
+.Rooms {
+  background-color: #faf9f6;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+
+#roomsHeading{
+    font-family: "Marcellus", serif;
 }
 
 /*Header End*/
 
-.Rooms {
-    background-color: #FAF9F6;
-    width: 90%;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    width: 90%;
-}
+@media screen and (max-width: 426px) {
 
-.container-1 {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    #roomsHeading{
+        font-size: 7vw;
+        margin: 5vw;
+    }
 
-.container-2 {
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  .Rooms {
+    padding: 5vw;
+    border-radius: 1vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8vw;
+  }
 
-}
-
-.card {
-    width: 300px;
-    height: 350px;
-    color: #4F7942;
-    background-color: #EDEADE;
-    margin: 20px;
+  .card {
+    width: 80vw;
+    color: #4f7942;
+    background-color: #edeade;
     border-bottom: 3px outset #faf9f63d;
-    border-radius: 20px;
-    font-family: 'baloo 2', sans-serif;
-}
+    border-radius: 4vw;
+    font-family: "baloo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    gap: 3vw;
+  }
 
-.card h3 {
+  .card h3 {
+    font-size: 5vw;
     font-weight: 900;
-    margin: 0px;
-    display: inline-block;
-}
+  }
 
-.image {
-
-    width: 280px;
-    height: 180px;
-    margin: 10px;
-    border-radius: 10px;
+  .card p {
+    font-size: 4vw;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 2vw;
     scale: 1;
-    transition: 0.5s;
-}
+  }
 
-.image:hover {
+  .image:hover {
     scale: 1.01;
-    transition-timing-function: ease;
-    border-radius: 15px;
+    border-radius: 3vw;
     box-shadow: 0px 2px 5px #4f794269;
-}
+  }
 
-
-.buttons {
-    color: #FAF9F6;
+  .buttons {
+    color: #faf9f6;
     background-color: #283d21;
-    padding: 3px 10px;
+    padding: 0.5vw 2vw;
     text-decoration: none;
-    border-radius: 10px;
-    border: 2px inset #4f794200;
-    transition: 0.5s;
-}
+    border-radius: 2vw;
+    border: 0.3vw inset #4f794200;
+  }
 
-.buttons:hover {
-    background-color: #4F7942;
+  .buttons:hover {
+    background-color: #4f7942;
     box-shadow: 0px 5px 5px #21321b98 inset;
-    border: 2px inset #FAF9F6;
-    transition-timing-function: ease;
+    border: 0.3vw inset #faf9f6;
+  }
 }
+@media screen and (min-width: 427px) {
+    #roomsHeading{
+        font-size: 4vw;
+        margin: 2vw;
+    }
+  .Rooms {
+    padding: 5vw;
+    border-radius: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
 
+  .card {
+    width: 35vw;
+    color: #4f7942;
+    background-color: #edeade;
+    border-bottom: 3px outset #faf9f63d;
+    border-radius: 2vw;
+    font-family: "baloo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    gap: 1vw;
+  }
+
+  .card h3 {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+
+  .card p {
+    font-size: 2vw;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    scale: 1;
+  }
+
+  .image:hover {
+    scale: 1.01;
+    border-radius: 1.5vw;
+    box-shadow: 0px 2px 5px #4f794269;
+  }
+
+  .buttons {
+    color: #faf9f6;
+    background-color: #283d21;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+    border-radius: 0.5vw;
+    border: 0.5vw inset #4f794200;
+  }
+
+  .buttons:hover {
+    background-color: #4f7942;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+    border: 0.5vw inset #faf9f6;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+    #roomsHeading{
+        font-size: 3vw;
+        margin: 2vw;
+    }
+
+  .Rooms {
+    border-radius: 0.5vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    width: 20vw;
+    height: auto;
+    color: #4f7942;
+    padding: 1vw;
+    background-color: #edeade;
+    border-radius: 1.5vw;
+    font-family: "baloo 2", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5vw;
+  }
+
+  .card h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: inline-block;
+  }
+  .card p {
+    font-size: 1vw;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8vw;
+    scale: 1;
+  }
+
+  .image:hover {
+    scale: 1.01;
+    border-radius: 1vw;
+    box-shadow: 0px 2px 5px #4f794269;
+  }
+
+  .buttons {
+    color: #faf9f6;
+    background-color: #283d21;
+    padding: 0.2vw 1vw;
+    text-decoration: none;
+    border-radius: 0.7vw;
+    border: 0.2vw inset #4f794200;
+  }
+
+  .buttons:hover {
+    background-color: #4f7942;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+    border: 0.2vw inset #faf9f6;
+  }
+}
