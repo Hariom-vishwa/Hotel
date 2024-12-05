@@ -162,6 +162,7 @@ h1 {
   }
 
   .nav a {
+    font-size: 2vw;
     color: #4f7942;
     text-decoration: none;
     padding: 0.5vw 1vw;
@@ -226,9 +227,10 @@ h1 {
   }
 
   .nav a {
+    font-size: 1.2vw;
     color: #4f7942;
     text-decoration: none;
-    padding: 0.5vw 1vw;
+    padding: 0.4vw 1vw;
     background-color: #faf9f6;
     border-radius: 0.5vw;
     border: 0.2vw inset #4f794200;
