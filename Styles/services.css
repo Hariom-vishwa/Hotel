@@ -1,77 +1,178 @@
-
 #services {
-    background-color: #cf1212;
-    color: #FAF9F6;
-    padding: 5px 20px;
+  background-color: #cf1212;
+  color: #faf9f6;
+  padding: 5px 20px;
 }
 
-/*Header End*/
+.servicesHeading {
+  font-family: "Marcellus", serif;
+}
 
-.ourservices{
+#parkingfig {
+  background-image: url("/Images/parking.jpg");
+}
+#poolfig {
+  background-image: url("/Images/pool.jpg");
+}
+#privatepoolfig {
+  background-image: url("/Images/privatepool.jpg");
+}
+#conferencefig {
+  background-image: url("/Images/conferenceroom.jpg");
+}
+#gymfig {
+  background-image: url("/Images/gym.jpg");
+}
+#spafig {
+  background-image: url("/Images/spa.jpg");
+}
+#wifi-fig {
+  background-image: url("https://images.pexels.com/photos/5950116/pexels-photo-5950116.jpeg");
+}
+
+@media screen and (max-width: 426px) {
+  .servicesHeading {
+    font-size: 4vw;
+    margin: 5vw;
+  }
+
+  .servicesCont {
     width: 90%;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Marcellus', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 3vw;
+  }
 
-}
-.ourservices h1{
-    margin: 10px;
-    padding: 20px 30px;
-    letter-spacing: 1px;
-    background-color: #FAF9F6;
-    border-radius: 5px;
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: #faf9f6;
+    border-radius: 1.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .aboutservices {
+    font-family: "Marcellus", serif;
+    width: 100%;
+    padding: 2vw;
+    display: grid;
+    place-items: center;
+    gap: 3vw;
+  }
+  .aboutservices h1 {
+    font-size: 6vw;
+  }
+
+  .aboutservices p {
+    font-size: 3vw;
+  }
+
+  .fig {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+  }
 }
 
-.container{
+@media screen and (min-width: 427px) {
+  .servicesHeading {
+    font-size: 1.5vw;
+    margin: 2vw;
+  }
+
+  .servicesCont {
     width: 90%;
-    margin: 10px;
-    padding: 5px;
-    background-color: #FAF9F6;
-    height: 300px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 3vw;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: #faf9f6;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .aboutservices {
+    font-family: "Marcellus", serif;
+    width: 100%;
+    padding: 2vw;
+    display: grid;
+    place-items: center;
+    gap: 3vw;
+  }
+  .aboutservices h1 {
+    font-size: 4vw;
+  }
+
+  .aboutservices p {
+    font-size: 2.5vw;
+  }
+
+  .fig {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5vw;
+  }
 }
 
-.aboutservices{
-    font-family: 'Marcellus', serif;
-    width: 40%;
-    margin: 10px;
-    padding: 5px;
-    height: 90%;
-}
-.fig{
-    background-size:cover;
-    height: 90%;
-    width: 40%;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 10px;
-}
+@media screen and (min-width: 1024px) {
+  .servicesHeading {
+    font-size: 1.5vw;
+    margin: 2vw;
+  }
 
-#parkingfig{
-    background-image: url("/Images/parking.jpg");
-}
-#poolfig{
-    background-image: url("/Images/pool.jpg");
-}
-#privatepoolfig{
-    background-image: url("/Images/privatepool.jpg");
-}
-#conferencefig{
-    background-image: url("/Images/conferenceroom.jpg");
-}
-#gymfig{
-    background-image: url("/Images/gym.jpg");
-}
-#spafig{
-    background-image: url("/Images/spa.jpg");
-}
-#wifi-fig{
-    background-image: url("/Images/wifi.jpg");
+  .servicesCont {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 3vw;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: #faf9f6;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .aboutservices {
+    font-family: "Marcellus", serif;
+    width: 100%;
+    padding: 2vw;
+    display: grid;
+    place-items: center;
+    gap: 3vw;
+  }
+  .aboutservices h1 {
+    font-size: 3vw;
+  }
+
+  .aboutservices p {
+    font-size: 1.5vw;
+  }
+
+  .fig {
+    background-size: cover;
+    height: 25vw;
+    width: 100%;
+    border-radius: 0.5vw;
+  }
 }

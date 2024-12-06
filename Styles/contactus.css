@@ -1,17 +1,64 @@
-
 #contactus {
-    background-color: #cf1212;
-    color: #FAF9F6;
-    padding: 5px 20px;
+  background-color: #cf1212;
+  color: #faf9f6;
+  padding: 5px 20px;
 }
 
+.contactus-heading {
+  font-family: "Marcellus", serif;
+}
 
-/*Header End*/
+@media screen and (max-width: 426px) {
+  .contactus-heading {
+    font-size: 4vw;
+    margin: 5vw;
+  }
 
-/* Contact Us  */
-.contactus-container {
+  .contactus-container {
     width: 90%;
-    background-color: #FAF9F6;
+    background-color: #faf9f6;
+    border-radius: 1vw;
+    padding: 2vw;
+    display: grid;
+    place-items: center;
+    gap: 2vw;
+  }
+
+  .contactus-container h1 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #helpcenter,#chat,
+  #email {
+    width: 100%;
+    padding: 1vw;
+    background-color: #edeade;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+  }
+
+  .contactus-container a {
+    width: 30vw;
+    color: #faf9f6;
+    background-color: #283d21;
+    /* padding: 0.5vw 2vw; */
+    text-decoration: none;
+    border-radius: 2vw;
+    border: 0.3vw inset #4f794200;
+  }
+
+  .contactus-container a:hover {
+    background-color: #4f7942;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+    border: 0.3vw inset #faf9f6;
+  }
+}
+@media screen and (min-width: 427px) {
+  .contactus-container {
+    width: 90%;
+    background-color: #faf9f6;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -19,90 +66,180 @@
     text-align: left;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.contactus-container h1{
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-.contactus-container p{
-    font-family: 'baloo 2', sans-serif;
-
-}
-.contactus-heading {
+  .contactus-container h1 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .contactus-container p {
+    font-family: "baloo 2", sans-serif;
+  }
+  .contactus-heading {
     width: 750px;
-    background-color: #FAF9F6;
+    background-color: #faf9f6;
     border-radius: 5px;
     text-align: center;
     margin: 10px;
     padding: 5px;
-}
+  }
 
-#helpcenter {
+  #helpcenter {
     width: 750px;
     margin: 10px;
     padding: 5px;
-    background-color: #EDEADE;
+    background-color: #edeade;
     border-radius: 5px;
     display: flex;
     text-align: left;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-#chat {
+  #chat {
     width: 750px;
     margin: 10px;
     padding: 5px;
-    background-color: #EDEADE;
+    background-color: #edeade;
     border-radius: 5px;
     display: flex;
     text-align: left;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-#email {
+  #email {
     width: 750px;
     margin: 10px;
     padding: 5px;
-    background-color: #EDEADE;
+    background-color: #edeade;
     border-radius: 5px;
     display: flex;
     text-align: left;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-.anchor {
+  .anchor {
     background-color: #283d21;
-    color: #FAF9F6;
+    color: #faf9f6;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: 0.5s;
-    font-family: 'baloo 2', sans-serif;
+    font-family: "baloo 2", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     border: 2px inset #4f794200;
+  }
 
-}
-
-#anchor2 {
+  #anchor2 {
     padding: 10px 33px;
-}
+  }
 
-#anchor3 {
+  #anchor3 {
     padding: 10px 52px;
     margin-right: 10px;
-}
-.anchor:hover{
-    background-color: #4F7942;
+  }
+  .anchor:hover {
+    background-color: #4f7942;
     border-radius: 10px;
-    border: 2px inset #FAF9F6;
-    color: #FAF9F6;
+    border: 2px inset #faf9f6;
+    color: #faf9f6;
     transition-timing-function: ease;
     box-shadow: 0px 5px 5px #21321b98 inset;
+  }
 }
+@media screen and (min-width: 1024px) {
+  .contactus-container {
+    width: 90%;
+    background-color: #faf9f6;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .contactus-container h1 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .contactus-container p {
+    font-family: "baloo 2", sans-serif;
+  }
+  .contactus-heading {
+    width: 750px;
+    background-color: #faf9f6;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+  }
 
+  #helpcenter {
+    width: 750px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #edeade;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #chat {
+    width: 750px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #edeade;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #email {
+    width: 750px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #edeade;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .anchor {
+    background-color: #283d21;
+    color: #faf9f6;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-family: "baloo 2", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px inset #4f794200;
+  }
+
+  #anchor2 {
+    padding: 10px 33px;
+  }
+
+  #anchor3 {
+    padding: 10px 52px;
+    margin-right: 10px;
+  }
+  .anchor:hover {
+    background-color: #4f7942;
+    border-radius: 10px;
+    border: 2px inset #faf9f6;
+    color: #faf9f6;
+    transition-timing-function: ease;
+    box-shadow: 0px 5px 5px #21321b98 inset;
+  }
+}
