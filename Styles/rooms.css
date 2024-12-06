@@ -149,10 +149,10 @@
 }
 @media screen and (min-width: 1024px) {
 
-    #roomsHeading{
-        font-size: 3vw;
-        margin: 2vw;
-    }
+  #roomsHeading{
+    font-size: 3vw;
+    margin: 2vw;
+}
 
   .Rooms {
     border-radius: 0.5vw;
