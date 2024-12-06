@@ -1,10 +1,10 @@
-#Rooms {
+#rooms {
   background-color: #cf1212;
   color: #faf9f6;
   padding: 5px 20px;
 }
 
-.Rooms {
+.rooms {
   background-color: #faf9f6;
   width: 90%;
   display: grid;
@@ -24,7 +24,7 @@
     margin: 5vw;
 }
 
-  .Rooms {
+  .rooms {
     padding: 5vw;
     border-radius: 1vw;
     grid-template-columns: repeat(1, 1fr);
@@ -88,7 +88,7 @@
         margin: 2vw;
     }
     
-  .Rooms {
+  .rooms {
     padding: 5vw;
     border-radius: 1vw;
     grid-template-columns: repeat(2, 1fr);
@@ -155,7 +155,7 @@
     margin: 2vw;
 }
 
-  .Rooms {
+  .rooms {
     border-radius: 0.5vw;
     grid-template-columns: repeat(3, 1fr);
   }
