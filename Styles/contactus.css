@@ -4,48 +4,68 @@
   padding: 5px 20px;
 }
 
+* {
+  /* border: 1px solid; */
+}
+
 .contactus-heading {
   font-family: "Marcellus", serif;
 }
 
 @media screen and (max-width: 426px) {
-  .contactus-heading {
+  .contactus-heading h1 {
+    width: 90%;
+    font-size: 7vw;
+  }
+
+  .contactus-heading p {
     font-size: 4vw;
-    margin: 5vw;
   }
 
   .contactus-container {
     width: 90%;
     background-color: #faf9f6;
     border-radius: 1vw;
-    padding: 2vw;
+    margin: 7vw 0;
+    padding: 5vw;
     display: grid;
     place-items: center;
-    gap: 2vw;
+    gap: 5vw;
+  }
+
+  #helpcenter,
+  #chat,
+  #email {
+    width: 100%;
+    padding: 5vw 2vw;
+    background-color: #edeade;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 7vw;
   }
 
   .contactus-container h1 {
     font-family: "Josefin Sans", sans-serif;
+    font-size: 6vw;
+    margin: 0 0 3vw 0;
   }
 
-  #helpcenter,#chat,
-  #email {
-    width: 100%;
-    padding: 1vw;
-    background-color: #edeade;
-    border-radius: 0.5vw;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center;
+  .contactus-container p {
+    font-size: 4vw;
+    font-family: "Josefin Sans", sans-serif;
   }
 
   .contactus-container a {
     width: 30vw;
+    font-family: "baloo 2", sans-serif;
+    font-size: 4vw;
     color: #faf9f6;
     background-color: #283d21;
-    /* padding: 0.5vw 2vw; */
+    padding: 2vw 3vw;
     text-decoration: none;
-    border-radius: 2vw;
+    border-radius: 1vw;
     border: 0.3vw inset #4f794200;
   }
 
@@ -56,106 +76,94 @@
   }
 }
 @media screen and (min-width: 427px) {
+  .contactus-heading {
+    margin: 2vw;
+  }
+
+  .contactus-heading h1 {
+    width: 90%;
+    font-size: 5vw;
+    margin: 1vw;
+  }
+
+  .contactus-heading p {
+    font-size: 3vw;
+  }
+
   .contactus-container {
     width: 90%;
     background-color: #faf9f6;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
+    border-radius: 1vw;
+    margin: 5vw 0;
+    padding: 2vw;
     display: grid;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
+    gap: 2vw;
+  }
+
+  #helpcenter,
+  #chat,
+  #email {
+    width: 100%;
+    padding: 5vw 2vw;
+    background-color: #edeade;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2vw;
   }
 
   .contactus-container h1 {
     font-family: "Josefin Sans", sans-serif;
+    font-size: 3.5vw;
+    margin: 0 0 1.5vw 0;
   }
+
   .contactus-container p {
+    font-size: 2.2vw;
+    line-height: 3vw;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .contactus-container a {
+    /* width: 30vw; */
     font-family: "baloo 2", sans-serif;
-  }
-  .contactus-heading {
-    width: 750px;
-    background-color: #faf9f6;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-  }
-
-  #helpcenter {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #chat {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #email {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .anchor {
+    font-size: 2.2vw;
+    color: #faf9f6;
     background-color: #283d21;
-    color: #faf9f6;
+    padding: 0.7vw 3vw;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.5s;
-    font-family: "baloo 2", sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: 2px inset #4f794200;
+    border-radius: 1vw;
+    border: 0.3vw inset #4f794200;
   }
 
-  #anchor2 {
-    padding: 10px 33px;
-  }
-
-  #anchor3 {
-    padding: 10px 52px;
-    margin-right: 10px;
-  }
-  .anchor:hover {
+  .contactus-container a:hover {
     background-color: #4f7942;
-    border-radius: 10px;
-    border: 2px inset #faf9f6;
-    color: #faf9f6;
-    transition-timing-function: ease;
     box-shadow: 0px 5px 5px #21321b98 inset;
+    border: 0.3vw inset #faf9f6;
   }
 }
+
 @media screen and (min-width: 1024px) {
+  .contactus-heading {
+    margin: 2vw;
+  }
+
+  .contactus-heading h1 {
+    font-size: 3vw;
+  }
+
+  .contactus-heading p {
+    font-size: 2vw;
+  }
+
   .contactus-container {
     width: 90%;
     background-color: #faf9f6;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
+    border-radius: 0.5vw;
+    margin: 2vw;
+    padding: 2vw;
     display: grid;
     text-align: left;
     justify-content: center;
@@ -164,81 +172,39 @@
 
   .contactus-container h1 {
     font-family: "Josefin Sans", sans-serif;
+    font-size: 2vw;
   }
   .contactus-container p {
     font-family: "baloo 2", sans-serif;
-  }
-  .contactus-heading {
-    width: 750px;
-    background-color: #faf9f6;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
+    font-size: 1.5vw;
   }
 
-  #helpcenter {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
-  }
-
+  #helpcenter,
+  #email,
   #chat {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
+    width: 85vw;
+    height: auto;
     background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  #email {
-    width: 750px;
-    margin: 10px;
-    padding: 5px;
-    background-color: #edeade;
-    border-radius: 5px;
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .anchor {
-    background-color: #283d21;
+  .contactus-container a {
+    font-size: 1.2vw;
+    background-color: #4f7942;
     color: #faf9f6;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.5s;
-    font-family: "baloo 2", sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: 2px inset #4f794200;
+    padding: 0.4vw 3vw;
+    border-radius: 0.5vw;
+    border: 0.2vw inset #4f794200;
   }
 
-  #anchor2 {
-    padding: 10px 33px;
-  }
-
-  #anchor3 {
-    padding: 10px 52px;
-    margin-right: 10px;
-  }
-  .anchor:hover {
-    background-color: #4f7942;
-    border-radius: 10px;
-    border: 2px inset #faf9f6;
-    color: #faf9f6;
+  .contactus-container a:hover {
+    border-radius: 0.5vw;
+    border: 0.2vw inset #faf9f6;
+    background-color: #faf9f6;
+    color: #4f7942;
     transition-timing-function: ease;
     box-shadow: 0px 5px 5px #21321b98 inset;
   }

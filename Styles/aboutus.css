@@ -1,139 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Josefin+Sans&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amita&family=Fugaz+One&family=Marcellus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Josefin+Sans&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Fugaz+One&family=Marcellus&display=swap");
 
-
-#aboutus{
-    background-color:#cf1212;
-    color: #FAF9F6;
-    padding: 5px 20px;
+#aboutus {
+  background-color: #cf1212;
+  color: #faf9f6;
+  padding: 5px 20px;
 }
 
-.aboutHeading{
-    font-family: "Marcellus", serif;
+.aboutHeading {
+  font-family: "Marcellus", serif;
 }
 
 @media screen and (max-width: 426px) {
+  .aboutHeading {
+    font-size: 7vw;
+    margin: 5vw;
+  }
 
-    .aboutHeading{
-        font-size: 7vw;
-        margin: 5vw;
-    }
+  .welcome,
+  .why {
+    width: 90%;
+    height: auto;
+    margin: 5vw 2vw;
+    padding: 2vw;
+    background-color: #faf9f6;
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5vw;
+  }
 
-    .welcome, .why {
-        width: 90%;
-        height: auto;
-        margin: 5vw 2vw;
-        padding: 2vw;
-        background-color: #FAF9F6;
-        border-radius:2vw;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 5vw;
-    }
-    
-    .figure{
-        height:50vw;
-        width: 100%;
-        background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
-        background-size: cover;
-        border-radius: 1vw;
-    }
+  .figure {
+    height: 50vw;
+    width: 100%;
+    background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
+    background-size: cover;
+    border-radius: 1vw;
+  }
 
-    .why .figure{
-        background-image: url("/Images/pexels-pixabay-161758.jpg");
-    }
-    
-    .content{
-        font-family: 'Marcellus', serif;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5vw;
-    }
+  .why .figure {
+    background-image: url("/Images/pexels-pixabay-161758.jpg");
+  }
+
+  .content {
+    font-family: "Marcellus", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  }
 }
 @media screen and (min-width: 427px) {
- 
-    .aboutHeading{
-        font-size: 7vw;
-        margin: 5vw;
-    }
+  .aboutHeading {
+    font-size: 5vw;
+    margin: 2vw;
+  }
 
-    .welcome, .why {
-        width: 90%;
-        height: auto;
-        margin: 5vw 2vw;
-        padding: 2vw;
-        background-color: #FAF9F6;
-        border-radius:2vw;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 3vw;
-    }
-    
-    .figure{
-        height:50vw;
-        width: 100%;
-        background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
-        background-size: cover;
-        border-radius: 1vw;
-    }
+  .welcome,
+  .why {
+    width: 90%;
+    height: auto;
+    margin: 2vw;
+    padding: 2vw;
+    background-color: #faf9f6;
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3vw;
+  }
 
-    .why .figure{
-        background-image: url("/Images/pexels-pixabay-161758.jpg");
-    }
-    
-    .content{
-        font-family: 'Marcellus', serif;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3vw;
-    }
+  .figure {
+    height: 50vw;
+    width: 100%;
+    background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
+    background-size: cover;
+    border-radius: 1vw;
+  }
+
+  .why .figure {
+    background-image: url("/Images/pexels-pixabay-161758.jpg");
+  }
+
+  .content {
+    font-family: "Marcellus", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .aboutHeading {
+    font-size: 3vw;
+    margin: 2vw;
+  }
 
-    .aboutHeading{
-        font-size: 3vw;
-        margin: 2vw;
-    }
+  .welcome,
+  .why {
+    width: 90%;
+    padding: 1vw;
+    background-color: #faf9f6;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .welcome, .why {
-        width: 90%;
-        margin: 10px;
-        padding: 5px;
-        background-color: #FAF9F6;
-        height: 300px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .figure {
-        background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
-        background-size: cover;
-        height: 90%;
-        width: 40%;
-        margin: 10px;
-        padding: 5px;
-        border-radius: 10px;
-    }
+  .figure {
+    height: 25vw;
+    width: 100%;
+    background-image: url("/Images/pexels-thorsten-technoman-338504.jpg");
+    background-size: cover;
+    border-radius: 0.8vw;
+  }
 
-    .why .figure{
-        background-image: url("/Images/pexels-pixabay-161758.jpg");
-    }
-    
-    .content {
-        font-family: 'Marcellus', serif;
-        width: 40%;
-        margin: 10px;
-        padding: 5px;
-        height: 90%;
-    
-    }
-      
+  .why .figure {
+    background-image: url("/Images/pexels-pixabay-161758.jpg");
+  }
+
+  .content {
+    font-family: "Marcellus", serif;
+    width: 100%;
+  }
 }
